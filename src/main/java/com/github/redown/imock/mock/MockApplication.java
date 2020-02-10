@@ -1,9 +1,7 @@
-package com.github.redown.imock.common;
+package com.github.redown.imock.mock;
 
 /**
- * @Author redown
- * @Date 2020/2/7 0007 18:36
- * @Description
+ * @author redown
  */
 public class MockApplication {
 

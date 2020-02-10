@@ -1,15 +1,12 @@
-package com.github.redown.imock.service.time;
+package com.github.redown.imock.xexample.handler;
 
 import io.netty.buffer.ByteBuf;
 import io.netty.channel.*;
-import io.netty.util.CharsetUtil;
 
 import java.util.Date;
 
 /**
- * @Author redown
- * @Date 2020/2/9 0009 11:34
- * @Description
+ * @author redown
  */
 @ChannelHandler.Sharable
 public class TimeServerHandler extends ChannelInboundHandlerAdapter {

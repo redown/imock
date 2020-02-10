@@ -1,4 +1,4 @@
-package com.github.redown.imock.service.echo;
+package com.github.redown.imock.xexample.handler;
 
 import io.netty.buffer.ByteBuf;
 import io.netty.channel.ChannelHandler;
@@ -7,9 +7,7 @@ import io.netty.channel.ChannelInboundHandlerAdapter;
 import io.netty.util.CharsetUtil;
 
 /**
- * @Author redown
- * @Date 2020/2/9 0009 11:31
- * @Description
+ * @author redown
  */
 @ChannelHandler.Sharable
 public class EchoServerHandler extends ChannelInboundHandlerAdapter {

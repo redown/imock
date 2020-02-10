@@ -1,17 +1,13 @@
-package com.github.redown.imock.service.discard;
+package com.github.redown.imock.xexample.handler;
 
 import io.netty.buffer.ByteBuf;
 import io.netty.channel.ChannelHandler;
 import io.netty.channel.ChannelHandlerContext;
-import io.netty.channel.ChannelInboundHandler;
 import io.netty.channel.ChannelInboundHandlerAdapter;
 import io.netty.util.CharsetUtil;
-import io.netty.util.ReferenceCountUtil;
 
 /**
- * @Author redown
- * @Date 2020/2/9 0009 10:05
- * @Description
+ * @author redown
  */
 @ChannelHandler.Sharable
 public class DiscardServerHander extends ChannelInboundHandlerAdapter {

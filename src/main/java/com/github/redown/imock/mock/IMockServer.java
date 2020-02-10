@@ -1,16 +1,12 @@
-package com.github.redown.imock.common;
-
-import io.netty.channel.ChannelHandler;
-import io.netty.channel.ChannelHandlerAdapter;
+package com.github.redown.imock.mock;
 
 import java.lang.annotation.*;
 
 /**
- * @Author redown
- * @Date 2020/2/9 0009 10:11
- * @Description
+ * @author redown
  */
 @Retention(RetentionPolicy.RUNTIME)
+@Target(value = ElementType.TYPE)
 @Documented
 public @interface IMockServer {
     String host() default "0.0.0.0";
