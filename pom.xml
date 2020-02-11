@@ -3,7 +3,7 @@
 	<modelVersion>4.0.0</modelVersion>
 	<groupId>com.github.redown</groupId>
 	<artifactId>imock</artifactId>
-	<version>0.0.1-SNAPSHOT</version>
+	<version>0.0.1</version>
 	<name>imock</name>
 
 	<properties>
@@ -36,7 +36,7 @@
 	</licenses>
 
 	<scm>
-		<tag>imock-0.0.1</tag>
+		<tag>v0.0.1</tag>
 		<url>https://github.com/redown/imock</url>
 		<connection>scm:git:https://github.com/redown/imock.git</connection>
 		<developerConnection>scm:git:https://github.com/redown/imock</developerConnection>
