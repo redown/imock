@@ -8,11 +8,11 @@ import com.github.redown.imock.xexample.entity.PersonOutput;
 /**
  * @author redown
  */
-@IApi(name = "Person Service")
+@IApi(name = "Person Service", alias = "/person")
 public interface PersonService {
-    @IApiMethod(name = "addPerson")
+    @IApiMethod(name = "addPerson", alias = "add")
     PersonOutput addPerson(PersonInput input);
 
-    @IApiMethod(name = "qaueryPerson")
+    @IApiMethod(name = "queryPerson", alias = "query")
     PersonOutput queryPerson(PersonInput input);
 }

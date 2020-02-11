@@ -8,14 +8,13 @@ import io.netty.channel.ChannelHandler;
  */
 public class MockServer {
 
-    public static MockServerContext run(Class<?> serverClass, String[] args) {
+    public static void run(Class<?> serverClass, String[] args) {
         System.out.println("--------------------------------------");
         System.out.println("------  IMock   ----------------------");
         System.out.println("--------------------------------------");
         MockServerContext context = initServer(serverClass);
         initApi(context, serverClass);
         context.start();
-        return context;
     }
 
     private static void initApi(IMockServerContext context, Class<?> serverClass) {
@@ -27,6 +26,7 @@ public class MockServer {
         if (iMockServer == null) {
             return null;
         }
+        IMockServerType type = iMockServer.type();
         String host = iMockServer.host();
         int port = iMockServer.port();
         Class handlerClass = iMockServer.hander();
@@ -34,6 +34,6 @@ public class MockServer {
             return null;
         }
         String name = serverClass.getName();
-        return new MockServerContext(host, port, handlerClass);
+        return new MockServerContext(name, type, host, port, handlerClass);
     }
 }

@@ -9,8 +9,10 @@ import java.lang.annotation.*;
 @Target(value = ElementType.TYPE)
 @Documented
 public @interface IMockServer {
-    String host() default "0.0.0.0";
+    IMockServerType type();
     int port();
     Class<?> hander();
-    String name() default "ExampleServer";
+    String host() default "0.0.0.0";
+    String name() default "MockServer";
+    String path() default "/";
 }
